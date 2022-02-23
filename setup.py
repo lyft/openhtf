@@ -143,6 +143,8 @@ INSTALL_REQUIRES = [
     'tornado>=4.3',
     'six>=1.13.0',
     'typing-extensions',
+    'wheel',
+    'check-wheel-contents',
 ]
 
 
@@ -183,7 +185,7 @@ class PyTestCommand(test):  # pylint: disable=missing-class-docstring
 
 setup(
     name='openhtf',
-    version='1.4.4',
+    version='1.4.5',
     description='OpenHTF, the open hardware testing framework.',
     author='John Hawley',
     author_email='madsci@google.com',
