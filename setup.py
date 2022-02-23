@@ -136,7 +136,7 @@ INSTALL_REQUIRES = [
     'future>=0.16.0',
     'mutablerecords>=0.4.1,<2.0',
     'oauth2client>=1.5.2,<2.0',
-    'protobuf>=3.6.0',
+    'protobuf==3.19.4',
     'PyYAML>=3.13',
     'pyOpenSSL>=17.1.0,<=19.1.0',
     'sockjs-tornado>=1.0.3,<2.0',
