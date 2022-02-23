@@ -132,17 +132,19 @@ INSTALL_REQUIRES = [
     'attrs>=19.3.0',
     'colorama>=0.3.9,<1.0',
     'contextlib2>=0.5.1,<1.0',
-    'enum34>=1.1.2,<2.0 ; python_version<"3.4"',
+    'enum34>=1.1.2,<2.0',
     'future>=0.16.0',
     'mutablerecords>=0.4.1,<2.0',
     'oauth2client>=1.5.2,<2.0',
-    'protobuf>=3.6.0,<4.0',
+    'protobuf==3.19.4',
     'PyYAML>=3.13',
-    'pyOpenSSL>=17.1.0,<18.0',
+    'pyOpenSSL>=17.1.0,<=19.1.0',
     'sockjs-tornado>=1.0.3,<2.0',
-    'tornado>=4.3,<5.0',
+    'tornado>=4.3',
     'six>=1.13.0',
     'typing-extensions',
+    'wheel',
+    'check-wheel-contents',
 ]
 
 
@@ -183,7 +185,7 @@ class PyTestCommand(test):  # pylint: disable=missing-class-docstring
 
 setup(
     name='openhtf',
-    version='1.4.4',
+    version='1.4.5',
     description='OpenHTF, the open hardware testing framework.',
     author='John Hawley',
     author_email='madsci@google.com',
